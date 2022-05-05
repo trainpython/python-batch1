@@ -1,4 +1,8 @@
 def fact(number):
-    pass
+    if(number==1):
+        return number
+    else:
+        return number*fact(number-1)
 
-fact(4)
+print('factorial is ',fact(4))
+
