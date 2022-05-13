@@ -1,0 +1,10 @@
+.students_thead{
+   background-color:blue;
+}
+.students_tbody{
+  background-color:orange;
+}
+
+#item_list{
+  background-color:orange;
+}

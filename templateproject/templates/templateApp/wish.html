@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wish Message</title>
+    <link href="{% static 'css/styles.css'%}" rel="stylesheet">
+    <style>
+        body{
+           background:orange;
+           color:white
+        }
+    </style>
+</head>
+<body>
+<h1 style="color:green">Hello Guys Good morning</h1>
+<img style="width:50%" src="{% static 'images/Biryani_of_Lahore.jpg'%}">
+<br>
+{{current_date}}
+<ul class="students_thead">
+    <li>{{name}}</li>
+    <li>{{rollno}}</li>
+    <li>{{marks}}</li>
+</ul>
+</body>
+</html>
