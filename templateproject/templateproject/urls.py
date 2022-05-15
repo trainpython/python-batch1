@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from templateApp import views
+from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wish/', views.wish_view),
-    path('wishontime/', views.wish_based_on_time_view)
+    # path('wish/', views.wish_view),
+    # path('wishontime/', views.wish_based_on_time_view),
+    url(r'^', include('templateApp.urls')),
 ]
